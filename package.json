@@ -1,0 +1,56 @@
+{
+  "name": "@knownagents/robots-txt-checker",
+  "version": "0.1.0",
+  "description": "A dependency-free robots.txt checker that makes it easy for respectful AI agents, crawlers, scrapers, and other bots to follow the rules. Includes fetching, parsing, and caching based on the RFC 9309 industry standard.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepack": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knownagents/robots-txt-checker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/knownagents/robots-txt-checker/issues"
+  },
+  "homepage": "https://github.com/knownagents/robots-txt-checker#readme",
+  "keywords": [
+    "robots.txt",
+    "robots txt",
+    "robots parser",
+    "robots checker",
+    "robots.txt parser",
+    "robots.txt checker",
+    "crawler",
+    "web crawler",
+    "bot",
+    "scraper",
+    "user agent",
+    "crawl",
+    "AI agent",
+    "AI crawler"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
