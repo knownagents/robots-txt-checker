@@ -1,5 +1,8 @@
 # robots-txt-checker
 
+[![Tests](https://github.com/knownagents/robots-txt-checker/actions/workflows/test.yml/badge.svg)](https://github.com/knownagents/robots-txt-checker/actions/workflows/test.yml)
+[![npm version](https://img.shields.io/npm/v/@knownagents/robots-txt-checker)](https://www.npmjs.com/package/@knownagents/robots-txt-checker)
+
 A dependency-free robots.txt checker that makes it easy for respectful AI agents, crawlers, scrapers, and other bots to follow the rules. Includes fetching, parsing, and caching based on the RFC 9309 industry standard.
 
 ## Installation
@@ -157,6 +160,10 @@ const isAllowed = match.isAllowed
 ```
 
 The matcher returns the decision and matched rule details without making network requests.
+
+## Testing
+
+The test suite includes selected parsing and matching cases adapted from [Google's official robots.txt test suite](https://github.com/google/robotstxt/blob/master/robots_test.cc), alongside tests for fetching, caching, and crawl-delay. See the [test documentation](https://github.com/knownagents/robots-txt-checker/blob/main/test/README.md) for attribution and differences.
 
 ## Requirements
 
