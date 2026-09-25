@@ -163,7 +163,7 @@ The matcher returns the decision and matched rule details without making network
 
 ## Testing
 
-The test suite includes selected parsing and matching cases adapted from [Google's official robots.txt test suite](https://github.com/google/robotstxt/blob/master/robots_test.cc), alongside tests for fetching, caching, and crawl-delay. See the [test documentation](https://github.com/knownagents/robots-txt-checker/blob/main/test/README.md) for attribution and differences.
+The test suite includes selected parsing and matching cases adapted from [Google's official robots.txt test suite](https://github.com/google/robotstxt/blob/master/robots_test.cc), alongside additional tests for fetching, caching, and crawl-delay. The adapted tests in `test/google.test.js` are Copyright 2019 Google LLC and licensed under [Apache 2.0](https://github.com/knownagents/robots-txt-checker/blob/main/test/LICENSE.google).
 
 ## Requirements
 
